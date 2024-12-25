@@ -7,7 +7,7 @@ function errorHandler(err, req, res, next) {
       success: false,
       message: err.message,
       err: err.details,
-      data: {},
+      data: {}, //because this is an exception so no data is going to be provided
     });
   }
 
